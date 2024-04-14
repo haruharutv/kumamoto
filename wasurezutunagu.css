@@ -25,9 +25,13 @@ html,body{
     box-shadow: 0 2px 2px 0 gainsboro, inset 0 -1px 0px -2px ;
     height:85px;
 }
-@media screen{(max-width:600px;)} {
-    
+.mobile-nav{
+display: none;
 }
+.mobile-nav-box{
+    display: none;
+}
+
 .links a{
     margin-left:20px;
     color:rgb(90, 187, 219);
@@ -66,12 +70,12 @@ html,body{
     display:inline-block;
     text-align: center;
     margin-left: auto;
-    height:calc(100% - 100px);
+    height:calc(100vh - 80px);
 }
 .container{
     width:calc(100% - 90px);
-    margin-left:30px;
-    margin-right:30px;
+    margin-left:45px;
+    margin-right:45px;
 }
 .title_context{
     display: inline-block;
@@ -95,4 +99,38 @@ html,body{
 .footer{
     background:rgb(245, 242, 242);
     padding:20px;
+}
+@media (max-width: 900px) { 
+    .icon{
+        height:35px;
+    }
+    .container{
+        width:calc(100% - 10px);
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .pc-nav{
+        display:none;
+    }
+    .mobile-nav{
+        position:fixed;
+        top:0px;
+        display: flex;
+        width:100%;
+        box-shadow: 0 2px 2px 0 gainsboro, inset 0 -1px 0px -2px ;
+        height:85px;
+    }
+    .mobile-nav-box{
+        display: none;
+    }
+    .cover_image_box{
+        text-align: center;
+    }
+    .cover_image{
+        display:inline-block;
+        text-align: center;
+        
+         width:100%;
+         height:auto;
+    }
 }
